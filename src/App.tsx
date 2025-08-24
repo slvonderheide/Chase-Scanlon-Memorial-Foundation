@@ -10,16 +10,36 @@ function App() {
   // Home Section Component
   const HomeSection = () => (
     <section id="home" className="section">
-      <div className="hero">
-        <h1>Welcome to the Chase Scanlon Memorial Foundation</h1>
-        <p>Honoring Chase's legacy through community events and support.</p>
-        <div className="hero-buttons">
-          <button onClick={() => setActiveSection('services')}>Golf Scramble</button>
-          <button onClick={() => setActiveSection('about')}>Hockey Tournament</button>
-          <button onClick={() => setActiveSection('contact')}>Contact Us</button>
+        <div className="hero">
+          <h1>Welcome to the Chase Scanlon Memorial Foundation</h1>
+          <p>Honoring Chase's legacy through community events and support.</p>
+          <div className="hero-buttons">
+            <button onClick={() => setActiveSection('services')}>Golf Scramble</button>
+            <button onClick={() => setActiveSection('about')}>Hockey Tournament</button>
+            <button onClick={() => setActiveSection('contact')}>Contact Us</button>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'stretch', gap: '2rem', margin: '2rem auto 0', maxWidth: '1100px' }}>
+            <section style={{ background: '#0a174e', borderRadius: '12px', padding: '1.5rem', flex: 1, boxShadow: '0 2px 8px rgba(0,0,0,0.07)', color: '#fff' }}>
+              <h2 style={{ color: '#c62828', marginBottom: '1rem' }}>About the Chase Scanlon Memorial Foundation</h2>
+              <p style={{ fontSize: '1.1rem', marginBottom: '0.5rem' }}>
+                The Chase Scanlon Memorial Foundation was established to honor the memory and legacy of Chase Scanlon. Our mission is to support youth, promote community engagement, and raise awareness for Type 1 Diabetes through events, scholarships, and outreach. We believe in the power of compassion, teamwork, and making a positive impact in the lives of others.
+              </p>
+            </section>
+            <div style={{ background: '#0a174e', borderRadius: '12px', padding: '1.5rem', flex: 1, boxShadow: '0 2px 8px rgba(0,0,0,0.07)' }}>
+              <h2 style={{ color: '#c62828', marginBottom: '1rem' }}>Scholarship Winner</h2>
+              <p style={{ fontSize: '1.1rem', marginBottom: '0.5rem' }}>
+                Congratulations to our 2025 Chase Scanlon Memorial Foundation Scholarship recipient!
+              </p>
+              <p style={{ fontWeight: 'bold', fontSize: '1.15rem', marginBottom: '0.5rem' }}>
+                Taylor Johnson
+              </p>
+              <p>
+                Taylor has demonstrated outstanding leadership, academic achievement, and a commitment to making a positive impact in our community. We are proud to support Taylor's future and honor Chase's legacy through this scholarship.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+      <div style={{ textAlign: 'center', marginTop: '1rem' }}>
         <a href="https://www.jdrf.org/" target="_blank" rel="noopener noreferrer">
           <button style={{ backgroundColor: '#1976d2', color: '#fff', padding: '1rem 2rem', borderRadius: '8px', border: 'none', fontSize: '1rem', fontWeight: 'bold', cursor: 'pointer' }}>
             Type 1 Diabetes Information
