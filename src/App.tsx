@@ -11,39 +11,75 @@ function App() {
   const HomeSection = () => (
     <section id="home" className="section">
       <div className="hero">
-        <h1>Welcome to Eaton Golf Company</h1>
-        <p>Your premier destination for professional golf services</p>
+        <h1>Welcome to the Chase Scanlon Memorial Foundation</h1>
+        <p>Honoring Chase's legacy through community events and support.</p>
         <div className="hero-buttons">
-          <button onClick={() => setActiveSection('services')}>Our Services</button>
-          <button onClick={() => setActiveSection('contact')}>Get Started</button>
+          <button onClick={() => setActiveSection('services')}>Golf Scramble</button>
+          <button onClick={() => setActiveSection('about')}>Hockey Tournament</button>
+          <button onClick={() => setActiveSection('contact')}>Contact Us</button>
         </div>
+      </div>
+      <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+        <a href="https://www.jdrf.org/" target="_blank" rel="noopener noreferrer">
+          <button style={{ backgroundColor: '#1976d2', color: '#fff', padding: '1rem 2rem', borderRadius: '8px', border: 'none', fontSize: '1rem', fontWeight: 'bold', cursor: 'pointer' }}>
+            Type 1 Diabetes Information
+          </button>
+        </a>
       </div>
     </section>
   )
 
-  // About Section Component
+  // Hockey Tournament Section Component
   const AboutSection = () => (
     <section id="about" className="section">
       <div className="container">
-        <h2>About Eaton Golf Company</h2>
+        <h2>Chase Scanlon Memorial Foundation Poppins Cup</h2>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '1rem', margin: '1rem 0' }}>
+          <img src="poppins_lable.jpg" alt="Poppins Cup Label" style={{ maxWidth: '300px', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.10)' }} />
+          <a href="https://www.facebook.com/media/set/?set=a.363048933108552&type=3" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', textAlign: 'center' }}>
+            <img src="poppins.jpg" alt="Poppins Cup Photo" style={{ maxWidth: '300px', borderRadius: '12px', boxShadow: '0 2px 8px rgba(0,0,0,0.15)' }} />
+            <div style={{ textAlign: 'center', fontSize: '0.9rem', color: '#555', marginTop: '0.5rem' }}>
+              Photo credit: <a href="https://pureopusproductions.com/" target="_blank" rel="noopener noreferrer" style={{ color: '#1976d2', textDecoration: 'underline' }}>Pure Opus Productions</a>
+            </div>
+            <div style={{ color: '#1976d2', fontWeight: 'bold', marginTop: '0.5rem', fontSize: '1.1rem' }}>Click for more</div>
+          </a>
+        </div>
         <p>
-          Founded with a passion for golf excellence, Eaton Golf Company has been serving 
-          golfers of all skill levels for years. Our team of experienced professionals 
-          is dedicated to helping you improve your game and enjoy the sport to its fullest.
+          Join us for the annual Chase Scanlon Memorial Hockey Tournament! This event brings together hockey enthusiasts of all ages to celebrate the spirit of competition and community. Enjoy exciting games, team camaraderie, and help support a great cause in memory of Chase Scanlon.
+        </p>
+        <p>
+          <a href="https://www.facebook.com/profile.php?id=100076562045959" target="_blank" rel="noopener noreferrer" style={{ color: '#1976d2', textDecoration: 'underline', fontWeight: 'bold' }}>
+            Visit our Hockey Tournament Facebook Page
+          </a>
         </p>
         <div className="about-grid">
           <div className="about-card">
-            <h3>Expert Instruction</h3>
-            <p>Learn from certified PGA professionals with years of teaching experience.</p>
+            <h3>Where competition meets compassion, hockey with a purpose.</h3>
+            <div style={{ margin: '1rem 0 1rem 1.5rem', padding: 0 }}>
+              <div style={{ marginBottom: '0.5rem' }}>🏒 The Tournament You Don’t Want to Miss!</div>
+              <div style={{ marginBottom: '0.5rem' }}>We’re rolling out FOUR teams — each stacked with 10 players and a goalie. Spots are first come, first serve, so don’t wait to lock in your spot!</div>
+              <div style={{ marginBottom: '0.5rem' }}>🎮 Game Time: Two Games Guaranteed - Semi-Finals Showdown, Championship Battle or the legendary Toilet Bowl 🚽</div>
+              <div style={{ marginBottom: '0.5rem' }}>Three 20-minute rolling periods with live officials.</div>
+              <div style={{ marginBottom: '0.5rem' }}>If it’s tied? Get ready for 3v3 sudden death OT and then a shootout if needed. (Championship? Continuous 3v3 until someone wins!)</div>
+              <div style={{ marginBottom: '0.5rem' }}>👕 Jerseys & Teams: You’ll be drafted to a squad, decked out in team jerseys, and ready to roll. Jerseys will need to be returned after your Day Two game.</div>
+              <div style={{ marginBottom: '0.5rem' }}>🍻 Off-Ice Fun: Tailgating is STRONGLY encouraged — bring food, beer, or both and keep the vibes alive.</div>
+              <div style={{ marginBottom: '0.5rem' }}>50/50 Raffle + prizes all weekend long.</div>
+              <div style={{ marginBottom: '0.5rem' }}>🔥 Sign up, show up, and bring the energy</div>
+            </div>
           </div>
           <div className="about-card">
-            <h3>Modern Facilities</h3>
-            <p>State-of-the-art practice facilities and equipment for optimal learning.</p>
+            <h3>Tournament Schedule</h3>
+            <p>Check back for the schedule.</p>
           </div>
-          <div className="about-card">
-            <h3>Personalized Approach</h3>
-            <p>Tailored lessons and programs to match your individual needs and goals.</p>
-          </div>
+              <div className="about-card">
+                <h3>Information</h3>
+                <p>
+                 If you are interested in playing or sponsoring please email at: PoppinsCup@gmail.com. 
+                 <br />
+                 <br />
+                 PayPal or Venmo is preferred with the memo “Poppins Cup” to @cjpoppin. PayPal email is hartercj@yahoo.com
+                </p>
+              </div>
         </div>
       </div>
     </section>
@@ -53,37 +89,27 @@ function App() {
   const ServicesSection = () => (
     <section id="services" className="section">
       <div className="container">
-        <h2>Our Services</h2>
+        <h2>Golf Scramble</h2>
+        <p>
+          Be part of the Chase Scanlon Memorial Golf Scramble! Gather your team and enjoy a day of fun, friendly competition, and community spirit. All skill levels are welcome, and proceeds go to support local causes in Chase's memory.
+        </p>
+        <p>
+          <a href="https://www.facebook.com/TheChaseScanlonClassic" target="_blank" rel="noopener noreferrer" style={{ color: '#1976d2', textDecoration: 'underline', fontWeight: 'bold' }}>
+            Visit our Golf Scramble Facebook Page
+          </a>
+        </p>
         <div className="services-grid">
           <div className="service-card">
-            <h3>Private Lessons</h3>
-            <p>One-on-one instruction tailored to your specific needs and skill level.</p>
-            <ul>
-              <li>Swing analysis and correction</li>
-              <li>Short game improvement</li>
-              <li>Course management</li>
-              <li>Mental game coaching</li>
-            </ul>
+            <h3>Team Play</h3>
+            <p>Form a team and compete in a classic golf scramble format for prizes and bragging rights.</p>
           </div>
           <div className="service-card">
-            <h3>Group Lessons</h3>
-            <p>Learn with friends and meet other golfers in our group sessions.</p>
-            <ul>
-              <li>Beginner group classes</li>
-              <li>Advanced technique workshops</li>
-              <li>Junior golf programs</li>
-              <li>Corporate golf events</li>
-            </ul>
+            <h3>On-Course Contests</h3>
+            <p>Participate in longest drive, closest to the pin, and other fun challenges throughout the event.</p>
           </div>
           <div className="service-card">
-            <h3>Club Fitting</h3>
-            <p>Professional club fitting to optimize your equipment for better performance.</p>
-            <ul>
-              <li>Launch monitor analysis</li>
-              <li>Custom club recommendations</li>
-              <li>Grip and lie angle adjustments</li>
-              <li>Equipment consultation</li>
-            </ul>
+            <h3>Food & Festivities</h3>
+            <p>Enjoy great food, drinks, and entertainment before and after your round.</p>
           </div>
         </div>
       </div>

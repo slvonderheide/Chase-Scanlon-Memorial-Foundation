@@ -8,7 +8,7 @@ function NavBar() {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-logo">
-          <h2>Eaton Golf Company</h2>
+          <h2>Chase Scanlon Memorial Foundation</h2>
         </div>
         
         <div className={`hamburger ${isOpen ? 'active' : ''}`} onClick={() => setIsOpen(!isOpen)}>
