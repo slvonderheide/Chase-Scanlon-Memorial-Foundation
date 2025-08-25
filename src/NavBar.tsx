@@ -59,7 +59,7 @@ function NavBar({ activeSection, setActiveSection }: NavBarProps) {
               className={`navbar-link ${activeSection === 'contact' ? 'active' : ''}`} 
               onClick={() => handleNavClick('contact')}
             >
-              Contact
+              Apply & Donate
             </button>
           </li>
         </ul>
