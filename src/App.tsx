@@ -13,10 +13,10 @@ function App() {
         <div className="hero">
           <h1>Welcome to the Chase Scanlon Memorial Foundation</h1>
           <p>Honoring Chase's legacy through community events and support.</p>
-          <div className="hero-buttons">
-            <button onClick={() => setActiveSection('services')}>Golf Scramble</button>
-            <button onClick={() => setActiveSection('about')}>Hockey Tournament</button>
-            <button onClick={() => setActiveSection('contact')}>Contact Us</button>
+          <div className="hero-buttons" style={{ display: 'flex', gap: '1rem', marginTop: '0.5rem' }}>
+            <button style={{ backgroundColor: '#1976d2', color: '#fff', padding: '1rem 2rem', borderRadius: '8px', border: 'none', fontSize: '1rem', fontWeight: 'bold', cursor: 'pointer', boxShadow: '0 2px 8px rgba(0,0,0,0.07)' }} onClick={() => setActiveSection('services')}>Golf Scramble</button>
+            <button style={{ backgroundColor: '#1976d2', color: '#fff', padding: '1rem 2rem', borderRadius: '8px', border: 'none', fontSize: '1rem', fontWeight: 'bold', cursor: 'pointer', boxShadow: '0 2px 8px rgba(0,0,0,0.07)' }} onClick={() => setActiveSection('about')}>Hockey Tournament</button>
+            <button style={{ backgroundColor: '#1976d2', color: '#fff', padding: '1rem 2rem', borderRadius: '8px', border: 'none', fontSize: '1rem', fontWeight: 'bold', cursor: 'pointer', boxShadow: '0 2px 8px rgba(0,0,0,0.07)' }} onClick={() => setActiveSection('contact')}>Apply & Donate</button>
           </div>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'stretch', gap: '2rem', margin: '2rem auto 0', maxWidth: '1100px' }}>
             <section style={{ background: '#0a174e', borderRadius: '12px', padding: '1.5rem', flex: 1, boxShadow: '0 2px 8px rgba(0,0,0,0.07)', color: '#fff' }}>
@@ -51,7 +51,7 @@ function App() {
 
   // Hockey Tournament Section Component
   const AboutSection = () => (
-    <section id="about" className="section">
+  <section id="about" className="section" style={{ background: 'rgba(25, 118, 210, 0.08)', minHeight: '90vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem 0' }}>
       <div className="container">
         <h2>Chase Scanlon Memorial Foundation Poppins Cup</h2>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '1rem', margin: '1rem 0' }}>
@@ -73,7 +73,7 @@ function App() {
           </a>
         </p>
         <div className="about-grid">
-          <div className="about-card">
+          <div className="about-card" style={{ border: '2px solid #0a174e', borderRadius: '12px', boxShadow: '0 2px 8px rgba(0,0,0,0.07)' }}>
             <h3>Where competition meets compassion, hockey with a purpose.</h3>
             <div style={{ margin: '1rem 0 1rem 1.5rem', padding: 0 }}>
               <div style={{ marginBottom: '0.5rem' }}>🏒 The Tournament You Don’t Want to Miss!</div>
@@ -87,18 +87,31 @@ function App() {
               <div style={{ marginBottom: '0.5rem' }}>🔥 Sign up, show up, and bring the energy</div>
             </div>
           </div>
-          <div className="about-card">
+          <div className="about-card" style={{ border: '2px solid #0a174e', borderRadius: '12px', boxShadow: '0 2px 8px rgba(0,0,0,0.07)' }}>
             <h3>Tournament Schedule</h3>
-            <p>Check back for the schedule.</p>
+            <p>2025 Summer Schedule</p>
+            <img src="schedule.jpg" alt="Tournament Schedule" style={{ width: '100%', maxWidth: '400px', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.10)', marginBottom: '1rem' }} />
           </div>
-              <div className="about-card">
+              <div className="about-card" style={{ border: '2px solid #0a174e', borderRadius: '12px', boxShadow: '0 2px 8px rgba(0,0,0,0.07)' }}>
                 <h3>Information</h3>
                 <p>
                  If you are interested in playing or sponsoring please email at: PoppinsCup@gmail.com. 
-                 <br />
-                 <br />
-                 PayPal or Venmo is preferred with the memo “Poppins Cup” to @cjpoppin. PayPal email is hartercj@yahoo.com
                 </p>
+                <p style={{ marginTop: '0.5rem', color: '#1976d2', fontWeight: 'bold' }}>
+                  Once registration is complete, please use a payment form below.
+                </p>
+                <div style={{ marginTop: '1rem', display: 'flex', gap: '1rem', flexWrap: 'nowrap', justifyContent: 'flex-start' }}>
+                  <a href="https://www.paypal.com/paypalme/hartercj" target="_blank" rel="noopener noreferrer">
+                    <button style={{ backgroundColor: '#1976d2', color: '#fff', padding: '0.75rem 1.5rem', borderRadius: '8px', border: 'none', fontSize: '1rem', fontWeight: 'bold', cursor: 'pointer' }}>
+                      Poppins Cup via PayPal
+                    </button>
+                  </a>
+                  <a href="https://venmo.com/u/cjpoppin" target="_blank" rel="noopener noreferrer">
+                    <button style={{ backgroundColor: '#1976d2', color: '#fff', padding: '0.75rem 1.5rem', borderRadius: '8px', border: 'none', fontSize: '1rem', fontWeight: 'bold', cursor: 'pointer' }}>
+                      Poppins Cup via Venmo
+                    </button>
+                  </a>
+                </div>
               </div>
         </div>
       </div>
@@ -107,7 +120,7 @@ function App() {
 
   // Services Section Component
   const ServicesSection = () => (
-    <section id="services" className="section">
+  <section id="services" className="section" style={{ background: 'rgba(25, 118, 210, 0.08)', minHeight: '90vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem 0' }}>
       <div className="container">
         <h2>Golf Scramble</h2>
         <p>
@@ -119,15 +132,15 @@ function App() {
           </a>
         </p>
         <div className="services-grid">
-          <div className="service-card">
+          <div className="service-card" style={{ border: '2px solid #0a174e', borderRadius: '12px', boxShadow: '0 2px 8px rgba(0,0,0,0.07)' }}>
             <h3>Team Play</h3>
             <p>Form a team and compete in a classic golf scramble format for prizes and bragging rights.</p>
           </div>
-          <div className="service-card">
+          <div className="service-card" style={{ border: '2px solid #0a174e', borderRadius: '12px', boxShadow: '0 2px 8px rgba(0,0,0,0.07)' }}>
             <h3>On-Course Contests</h3>
             <p>Participate in longest drive, closest to the pin, and other fun challenges throughout the event.</p>
           </div>
-          <div className="service-card">
+          <div className="service-card" style={{ border: '2px solid #0a174e', borderRadius: '12px', boxShadow: '0 2px 8px rgba(0,0,0,0.07)' }}>
             <h3>Food & Festivities</h3>
             <p>Enjoy great food, drinks, and entertainment before and after your round.</p>
           </div>
