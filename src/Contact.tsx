@@ -60,8 +60,12 @@ function Contact() {
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem', justifyContent: 'center', width: '100%', maxWidth: '1300px', margin: '0 auto' }}>
         <div className="contact-form" style={{ flex: '1 1 400px', minWidth: '320px', maxWidth: '600px', background: '#fff', borderRadius: '12px', boxShadow: '0 2px 8px rgba(0,0,0,0.07)', padding: '2rem' }}>
           <h3>Scholarship Application</h3>
-          <p>Fill out the Google Form below to apply for the Chase Scanlon Memorial Foundation Scholarship. We are looking for students who demonstrate leadership, academic achievement, and a commitment to making a positive impact in their community.</p>
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdfe4-ewXVQ4h9YKOgGrfZROhvy_Q972tQPPlfKycdoZd5wlA/viewform?usp=dialog" width={600} height={900} frameBorder={0} marginHeight={0} marginWidth={0} title="Scholarship Application Form">Loading…</iframe>
+          <p>To apply for the Chase Scanlon Memorial Foundation Scholarship, please use the Google Form linked below. We are looking for students who demonstrate leadership, academic achievement, and a commitment to making a positive impact in their community.</p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdfe4-ewXVQ4h9YKOgGrfZROhvy_Q972tQPPlfKycdoZd5wlA/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
+            <button style={{ backgroundColor: '#1976d2', color: '#fff', padding: '1rem 2rem', borderRadius: '8px', border: 'none', fontSize: '1rem', fontWeight: 'bold', cursor: 'pointer', marginTop: '1rem' }}>
+              Apply for Scholarship
+            </button>
+          </a>
         </div>
         <div className="donation-box" style={{ flex: '1 1 400px', minWidth: '320px', maxWidth: '600px', background: '#fff', borderRadius: '12px', boxShadow: '0 2px 8px rgba(0,0,0,0.07)', padding: '2rem' }}>
           <h3 style={{ color: '#c62828', marginBottom: '1rem' }}>Donate to the Foundation</h3>
