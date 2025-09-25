@@ -13,11 +13,6 @@ function App() {
         <div className="hero">
           <h1>Welcome to the Chase Scanlon Memorial Foundation</h1>
           <p>Honoring Chase's legacy through community events and support.</p>
-          <div className="hero-buttons" style={{ display: 'flex', gap: '1rem', marginTop: '0.5rem' }}>
-            <button style={{ backgroundColor: '#1976d2', color: '#fff', padding: '1rem 2rem', borderRadius: '8px', border: 'none', fontSize: '1rem', fontWeight: 'bold', cursor: 'pointer', boxShadow: '0 2px 8px rgba(0,0,0,0.07)' }} onClick={() => setActiveSection('services')}>Golf Scramble</button>
-            <button style={{ backgroundColor: '#1976d2', color: '#fff', padding: '1rem 2rem', borderRadius: '8px', border: 'none', fontSize: '1rem', fontWeight: 'bold', cursor: 'pointer', boxShadow: '0 2px 8px rgba(0,0,0,0.07)' }} onClick={() => setActiveSection('about')}>Hockey Tournament</button>
-            <button style={{ backgroundColor: '#1976d2', color: '#fff', padding: '1rem 2rem', borderRadius: '8px', border: 'none', fontSize: '1rem', fontWeight: 'bold', cursor: 'pointer', boxShadow: '0 2px 8px rgba(0,0,0,0.07)' }} onClick={() => setActiveSection('contact')}>Apply & Donate</button>
-          </div>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'stretch', gap: '2rem', margin: '2rem auto 0', maxWidth: '1100px' }}>
             <section style={{ background: '#0a174e', borderRadius: '12px', padding: '1.5rem', flex: 1, boxShadow: '0 2px 8px rgba(0,0,0,0.07)', color: '#fff' }}>
               <h2 style={{ color: '#c62828', marginBottom: '1rem' }}>About the Chase Scanlon Memorial Foundation</h2>
@@ -120,7 +115,24 @@ function App() {
 
   // Services Section Component
   const ServicesSection = () => (
-  <section id="services" className="section" style={{ background: 'rgba(25, 118, 210, 0.08)', minHeight: '90vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem 0' }}>
+    <section
+      id="services"
+      className="section"
+      style={{
+        backgroundImage: "url('TCSF Solid Grey.jpg')",
+  backgroundSize: 'contain',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+  backgroundColor: '#e0e0e0',
+        minHeight: '100vh',
+        width: '100vw',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '2rem 0',
+      }}
+    >
       <div className="container">
         <h2>Golf Scramble</h2>
         <p>
