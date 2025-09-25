@@ -18,9 +18,10 @@ function NavBar({ activeSection, setActiveSection }: NavBarProps) {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-logo" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          {/* Type 1 Diabetes Symbol (Blue Circle) */}
-          <span style={{ display: 'inline-block', width: '32px', height: '32px', borderRadius: '50%', background: '#009fe3', border: '2px solid #1976d2' }} title="Type 1 Diabetes Symbol"></span>
-          <h2 style={{ margin: 0 }}>Chase Scanlon Memorial Foundation</h2>
+          <img src="TCSF Solid Grey.jpg" alt="Chase Scanlon Memorial Foundation Logo" style={{ height: '48px', width: 'auto', borderRadius: '8px', objectFit: 'contain' }} />
+          <span style={{ fontWeight: 700, fontSize: '1.25rem', color: '#222', marginLeft: '0.5rem', whiteSpace: 'nowrap' }}>
+            Chase Scanlon Memorial Foundation
+          </span>
         </div>
         
         <div className={`hamburger ${isOpen ? 'active' : ''}`} onClick={() => setIsOpen(!isOpen)}>
